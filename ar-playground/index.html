@@ -27,6 +27,10 @@
             <img id="buttonClosed" src="https://raw.githubusercontent.com/heltis/heltis.github.io/master/ar-playground/models/Button_Closed.png">
             <img id="buttonOpen" src="https://raw.githubusercontent.com/heltis/heltis.github.io/master/ar-playground/models/Button_Open.png">
         </a-assets>
+            
+        <a-marker type='barcode' value='60'>
+            <a-image src="#buttonClosed" position="0 0 0" rotation="-90 0 0" width="2" height="2" material="opacity: 0.5;"></a-image>
+        </a-marker>
 
         <a-marker markerhandler emitevents="true" cursor="rayOrigin: mouse" id="animated-marker" type='barcode' value='50'>
             <a-image src="#buttonClosed" id="animated-model" position="0 0 0" rotation="-90 0 0" width="2" height="2"></a-image>
